@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather page</title>
+</head>
+<body>
+<h1>Good day!</h1>
+<h2>The temperature today is
+    <span th:text="${degreesNumber}"></span>
+    <span th:style="'color:' + ${color}" th:text="${degrees}"></span></h2>
+<!--request http://localhost:8080/home/green?degreesNumber=20&degrees=degrees-->
+</body>
+</html>
